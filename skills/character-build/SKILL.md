@@ -43,7 +43,7 @@ cabang yang sesuai.
 1. **Jalur penguncian wajah**:
    | Jalur | Foto | Waktu | Bisa dipakai di | Cocok untuk |
    |---|---|---|---|---|
-   | **Latih Soul** | 5–20 foto orang yang sama (idealnya mendekati 20) | ±10 menit | Hanya Soul 2.0 & Soul Cinema (photoreal), 1 orang per generasi | Kemiripan paling tinggi, series/AI influencer photoreal |
+   | **Latih Soul** | 5–20 foto orang yang sama (idealnya mendekati 20) | ±10 menit | Gambar: hanya Soul 2.0 & Soul Cinema (photoreal), 1 orang per generasi. Video: tidak langsung. Gambar hasil Soul dipakai sebagai `start_image`/referensi di Seedance, Kling, dll. | Kemiripan paling tinggi, series/AI influencer photoreal |
    | **Element** | 1 foto terbaik | Instan | Nano Banana Pro/2, GPT Image 2, Seedream, Cinema Studio, Seedance 2.0, Kling 3.0; bisa multi-karakter | Gaya non-photoreal, video, adegan dengan karakter lain |
    | **Keduanya** | 5–20 foto | ±10 menit | Semua di atas | Proyek serius: Soul untuk gambar photoreal, Element untuk video/gaya lain |
 2. **Gaya visual**: photoreal / 3D stylized / anime 2D / lainnya. Gaya non-photoreal = **wajib Element** (Soul hanya photoreal).
