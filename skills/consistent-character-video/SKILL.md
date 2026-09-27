@@ -1,6 +1,6 @@
 ---
 name: consistent-character-video
-description: Bikin karakter AI yang konsisten (wajah, rambut, outfit, gaya) lalu hidupkan jadi video multi-shot di Higgsfield atau tool sejenis (Soul ID, Nano Banana Pro, Seedance, Kling, Wan, MiniMax). Pakai saat user mau karakter yang sama muncul di banyak gambar/klip, bikin character sheet, series/short film/iklan/konten AI influencer, atau mengeluh "wajahnya berubah-ubah tiap shot".
+description: Bikin karakter AI baru yang konsisten (wajah, rambut, outfit, gaya) lengkap dengan character sheet, lalu hidupkan jadi video multi-shot di Higgsfield atau tool sejenis (Soul ID, Nano Banana Pro, Seedance, Kling, Wan, MiniMax). Pakai saat user minta buat karakter baru, character sheet, karakter yang sama di banyak gambar/klip, series/short film/iklan/konten AI influencer, atau mengeluh "wajahnya berubah-ubah tiap shot".
 ---
 
 # Consistent Character → Video
@@ -13,6 +13,7 @@ dideskripsikan ulang dengan kata-kata berbeda.** Hampir semua masalah "karaktern
 datang dari melanggar prinsip ini.
 
 Detail pendukung ada di folder `references/`:
+- `references/new-character.md` — **Mode Karakter Baru**: data yang diminta dari user, default, checkpoint, deliverable, panduan manual.
 - `references/prompt-templates.md` — template Character Bible, character sheet, keyframe, dan prompt video.
 - `references/model-guide.md` — model mana untuk tahap mana (image, video, audio) dan parameter pentingnya.
 - `references/troubleshooting.md` — diagnosis drift (wajah berubah, outfit berubah, style bergeser) dan cara memperbaikinya.
@@ -55,6 +56,27 @@ Tidak perlu skill ini untuk satu gambar atau satu klip lepas tanpa kebutuhan kon
 8. **Karakter orisinal / dengan izin.** Jangan membuat kemiripan orang nyata tanpa izin atau
    karakter ber-hak cipta. Untuk wajah orang nyata (misal diri sendiri) pakai foto milik sendiri
    atau dengan persetujuan orangnya.
+
+---
+
+## Mode Karakter Baru (baca ini dulu bila user minta karakter baru)
+
+Kalau user minta **membuat karakter baru** (belum ada sheet/Soul ID), jalankan
+`references/new-character.md` — itu mencakup Fase 0–3 di bawah dengan aturan tambahan:
+
+1. **Intake singkat:** 4 data wajib (tujuan/peran, gaya visual, gender-usia-etnis, vibe 3 kata);
+   sisanya diisi default bertanda `[default]`. Maks. 2–3 pertanyaan; belum punya ide → tawarkan 3 konsep mini.
+2. **Checkpoint 1 — Character Bible:** kirim Bible + Style Formula + 3 anchor features + rencana
+   sheet. **Jangan generate sebelum user setuju.**
+3. **Checkpoint 2 — Sheet:** rakit prompt dari template; bila Higgsfield MCP tersedia, tampilkan
+   model + jumlah varian + perkiraan kredit, tunggu persetujuan, lalu generate split-screen dulu,
+   baru turnaround/expression dengan split-screen terpilih sebagai referensi. Tanpa tool →
+   prompt copy-paste + Panduan Manual.
+4. **Checkpoint 3 — QC & pilih:** nilai varian, rekomendasikan satu, perbaikan terarah (maks. ±3 putaran).
+5. **Checkpoint 4 — Asset Pack:** Bible final, ID/URL sheet, model & setting, catatan drift,
+   langkah berikutnya. Karakter berstatus LOCKED.
+
+Mode ini berhenti di karakter terkunci. Video baru dikerjakan bila user meminta (Fase 4–7).
 
 ---
 
