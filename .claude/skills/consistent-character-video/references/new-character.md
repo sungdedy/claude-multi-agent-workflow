@@ -44,7 +44,7 @@ yang siap dipakai untuk keyframe dan video. Mode ini **tidak** membuat video —
 ### Tolak / arahkan ulang
 - Kemiripan orang nyata tanpa izin atau karakter ber-hak cipta → buat karakter orisinal yang
   hanya "terinspirasi vibe"-nya.
-- Wajah user sendiri → boleh, dengan foto milik user (untuk Soul ID ±20+ foto).
+- Wajah user sendiri → boleh, dengan foto milik user (untuk Soul ID 5–20 foto).
 - Karakter anak-anak → hanya konteks aman (cerita anak, edukasi), outfit & pose wajar.
 
 ---
@@ -107,7 +107,7 @@ CATATAN DRIFT: <hal yang cenderung melenceng di model ini, mis. "anting sering p
 Plus **Langkah Berikutnya** singkat untuk user:
 1. Simpan sheet dengan nama file = ID karakter (mis. `RARA_V1_sheet_split.png`).
 2. Jangan re-generate / "rapikan" sheet yang sudah dikunci; perubahan = state baru.
-3. (Opsional, photoreal jangka panjang) Latih Soul ID: buat 20+ gambar konsisten dari sheet
+3. (Opsional, photoreal jangka panjang) Latih Soul ID: buat 5–20 gambar konsisten dari sheet
    (berbagai sudut & ekspresi, cahaya rata) lalu latih di Higgsfield.
 4. Lanjut ke Fase 4 skill ini: shot list + keyframe.
 

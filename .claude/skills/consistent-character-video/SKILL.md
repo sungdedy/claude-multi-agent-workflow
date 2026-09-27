@@ -61,8 +61,10 @@ Tidak perlu skill ini untuk satu gambar atau satu klip lepas tanpa kebutuhan kon
 
 ## Mode Karakter Baru (baca ini dulu bila user minta karakter baru)
 
-Kalau user minta **membuat karakter baru** (belum ada sheet/Soul ID), jalankan
-`references/new-character.md` — itu mencakup Fase 0–3 di bawah dengan aturan tambahan:
+Kalau user minta **membuat karakter baru** (belum ada sheet/Soul ID), **pakai skill
+`character-build`** (`../character-build/SKILL.md`). Skill itu selalu dimulai dengan pertanyaan
+"foto referensi sendiri atau di-generate dari nol?", lalu menjalankan alur di bawah ini
+(detail di `references/new-character.md`). Ringkasannya:
 
 1. **Intake singkat:** 4 data wajib (tujuan/peran, gaya visual, gender-usia-etnis, vibe 3 kata);
    sisanya diisi default bertanda `[default]`. Maks. 2–3 pertanyaan; belum punya ide → tawarkan 3 konsep mini.
@@ -101,7 +103,7 @@ identik di semua prompt.
 ### Fase 2 — Identity Anchor (pilih satu jalur)
 | Jalur | Kapan | Cara |
 |---|---|---|
-| **A. Soul ID (Higgsfield)** | Karakter photoreal yang akan dipakai lama (series, AI influencer) atau wajah Anda sendiri | Latih Soul ID dari ±20+ foto orang yang sama (pencahayaan rata, banyak sudut, tanpa kacamata hitam/filter). Setelah itu generate lewat **Soul 2.0** dengan `soul_id`. Kalau karakternya fiktif, generate dulu 20+ gambar konsisten dari character sheet, lalu latih Soul ID dari situ. |
+| **A. Soul ID (Higgsfield)** | Karakter photoreal yang akan dipakai lama (series, AI influencer) atau wajah Anda sendiri | Latih Soul ID dari 5–20 foto orang yang sama (idealnya mendekati 20) (pencahayaan rata, banyak sudut, tanpa kacamata hitam/filter). Setelah itu generate lewat **Soul 2.0** dengan `soul_id`. Kalau karakternya fiktif, generate dulu 5–20 gambar konsisten dari character sheet, lalu latih Soul ID dari situ. |
 | **B. Reference sheet** | Paling fleksibel, semua gaya (anime, 3D, photoreal) | Buat character sheet (Fase 3) dengan model image yang kuat (Nano Banana Pro, GPT Image, Seedream, Soul 2.0), lalu jadikan referensi di setiap generasi. |
 | **C. Keduanya** | Proyek serius | Soul ID untuk wajah + sheet untuk outfit/prop/pose. |
 

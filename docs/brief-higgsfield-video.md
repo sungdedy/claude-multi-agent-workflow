@@ -38,7 +38,7 @@ fitur *video analysis* Higgsfield. Analisis itu hanya menghasilkan **30 detik pe
 | Area | Fungsi | Relevansi ke karakter konsisten |
 |---|---|---|
 | **Supercomputer** | Agent chat: jelaskan hasil yang diinginkan, agent memecah langkah, memilih model & preset, menampilkan biaya kredit, lalu mengeksekusi. Output langkah 1 (mis. gambar karakter) otomatis jadi referensi langkah 2. | Menghilangkan download/upload ulang yang sering jadi sumber drift. |
-| **Soul 2.0 + Soul ID** | Model foto photoreal; Soul ID = identitas terlatih dari ±20+ foto orang yang sama. | Cara paling kuat mengunci wajah photoreal. |
+| **Soul 2.0 + Soul ID** | Model foto photoreal; Soul ID = identitas terlatih dari 5–20 foto orang yang sama (training ±10 menit; hanya untuk Soul 2.0 / Soul Cinema). | Cara paling kuat mengunci wajah photoreal. |
 | **Image models** (Nano Banana Pro, GPT Image, Seedream) | Gambar dari teks/referensi. | Character sheet & keyframe multi-referensi. |
 | **Popcorn / storyboard** | Beberapa gambar sekaligus dengan karakter, cahaya, komposisi seragam. | Storyboard cepat yang konsisten. |
 | **Cinema Studio** | Pembuatan shot sinematik: kontrol kamera, lensa, karakter sebagai elemen yang dikunci. | Identitas di elemen/karakter, gerakan di prompt. |
